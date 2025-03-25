@@ -1,1 +1,1 @@
-#Repositório reservado a atividades de Coding.
+Repositório reservado a atividades de Coding.
