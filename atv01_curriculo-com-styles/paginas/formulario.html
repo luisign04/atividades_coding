@@ -1,0 +1,106 @@
+<fieldset class="container mt-5 border p-4 rounded">
+    <legend class="mb-3">Formulário de Contato</legend>
+    <form id="form-contato">
+      <div class="row mb-3">
+        <div class="col-md-6">
+          <label for="nome" class="form-label">Nome</label>
+          <input type="text" id="nome" class="form-control" required>
+        </div>
+        <div class="col-md-6">
+          <label for="sobrenome" class="form-label">Sobrenome</label>
+          <input type="text" id="sobrenome" class="form-control" required>
+        </div>
+      </div>
+  
+      <div class="mb-3">
+        <label for="telefone" class="form-label">Telefone</label>
+        <input type="tel" id="telefone" class="form-control" placeholder="(99) 99999-9999" required>
+      </div>
+  
+      <div class="mb-3">
+        <label for="email" class="form-label">E-mail</label>
+        <input type="email" id="email" class="form-control" placeholder="exemplo@dominio.com" required>
+      </div>
+  
+      <div class="mb-3">
+        <label for="mensagem" class="form-label">Mensagem</label>
+        <textarea id="mensagem" rows="4" class="form-control" required></textarea>
+      </div>
+  
+      <div class="mb-3">
+        <label for="lingua" class="form-label">Língua aplicada no serviço</label>
+        <select id="lingua" class="form-select" required>
+          <option value="">Selecione</option>
+          <option>Inglês</option>
+          <option>Espanhol</option>
+          <option>Francês</option>
+          <option>Português (pt-br)</option>
+        </select>
+      </div>
+  
+      <div class="mb-3">
+        <label for="arquivo" class="form-label">Upload de protótipo (PDF, DOC, DOCX, JPEG, PNG)</label>
+        <input type="file" id="arquivo" class="form-control" accept=".pdf,.doc,.docx,.jpeg,.jpg,.png" required>
+      </div>
+  
+      <div class="mb-3">
+        <label class="form-label">Linguagens preferidas</label>
+        <select multiple class="form-select">
+          <option>Python</option>
+          <option>JavaScript</option>
+          <option>Java</option>
+          <option>C#</option>
+          <option>PHP</option>
+        </select>
+      </div>
+  
+      <div class="mb-3">
+        <label class="form-label">Tipo de Banco de Dados recomendado</label><br>
+        <div class="form-check form-check-inline">
+          <input class="form-check-input" type="radio" name="bd" id="mysql" value="MySQL">
+          <label class="form-check-label" for="mysql">MySQL</label>
+        </div>
+        <div class="form-check form-check-inline">
+          <input class="form-check-input" type="radio" name="bd" id="postgres" value="PostgreSQL">
+          <label class="form-check-label" for="postgres">PostgreSQL</label>
+        </div>
+        <div class="form-check form-check-inline">
+          <input class="form-check-input" type="radio" name="bd" id="mongo" value="MongoDB">
+          <label class="form-check-label" for="mongo">MongoDB</label>
+        </div>
+      </div>
+  
+      <div class="mb-3">
+        <label for="turno" class="form-label">Turno preferido para reuniões</label>
+        <select id="turno" class="form-select">
+          <option value="">Selecione</option>
+          <option>Manhã</option>
+          <option>Tarde</option>
+          <option>Noite</option>
+        </select>
+      </div>
+  
+      <div class="mb-3">
+        <label for="horario" class="form-label">Melhor horário sugerido</label>
+        <input type="time" id="horario" class="form-control">
+      </div>
+  
+      <div class="mb-3">
+        <label for="entrega" class="form-label">Previsão de entrega desejada</label>
+        <input type="date" id="entrega" class="form-control">
+      </div>
+  
+      <div class="d-flex justify-content-between">
+        <button type="reset" class="btn btn-secondary">Limpar</button>
+        <button type="submit" class="btn btn-primary">Enviar</button>
+      </div>
+    </form>
+  </fieldset>
+
+  <script>
+    document.getElementById("form-contato").addEventListener("submit", function (e) {
+      e.preventDefault();
+      alert("Formulário enviado com sucesso!");
+    });
+  </script>
+  
